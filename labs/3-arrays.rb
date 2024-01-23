@@ -15,3 +15,16 @@
 # HINTS
 # Learn to read the documentation!
 # https://ruby-doc.org/core-2.7.0/Array.html
+
+#my food list
+favorite_foods = ["tacos", "ribs", "hamburgers", "cheesecake"]
+#friend food list
+madi_favorite_foods = ["ceviche", "aji de gallina", "lomo saltado"]
+# # combined food list
+# our_favorite_foods = favorite_foods + madi_favorite_foods
+# # sorted food list output
+# sorted_list = our_favorite_foods.sort
+#improved
+sorted_list = (favorite_foods + madi_favorite_foods).uniq.sort
+# print sorted list with buy prepend
+puts sorted_list
