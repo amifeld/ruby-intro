@@ -23,35 +23,41 @@ suits = ["Clubs", "Diamonds", "Hearts", "Spades"]
 # Create the deck
 deck = []
 
+# set index for suits and ranks
 index_ranks = 0
 index_suits = 0
 
+#start loop
 loop do
     rank = ranks[index_ranks]
     suit = suits[index_suits]
-
+#create a combined variable and add it to the deck
     card = "#{rank} of #{suit}"
     deck.push (card)
-
+# increment the suit index
 index_suits = index_suits + 1
-index_ranks = index_ranks + 1
-
-if ranks.length == index_ranks and suits.length == index_suits
-    break
-end
-
 if suits.length == index_suits
+#restart suit count when we reach the end
+index_suits = 0
+#increase rank index
+index_ranks = index_ranks + 1
+end
+#stop once we're done with every rank
+if ranks.length == index_ranks 
     break
 end
 
 end
-
+#create loop to display cards
 index_card = 0
+#start loop referencing the deck
 loop do
     card = deck[index_card]
 
     puts card
+    #increase the index
 index_card = index_card + 1
+#break once the deck is done
 if deck.length == index_card
     break
 end
