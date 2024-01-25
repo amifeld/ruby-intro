@@ -48,6 +48,7 @@ if ranks.length == index_ranks
 end
 
 end
+
 #create loop to display cards
 index_card = 0
 #start loop referencing the deck
@@ -62,6 +63,20 @@ if deck.length == index_card
     break
 end
 end
+
+# #challenge
+# #shuffle deck
+# deck.shuffle!
+# #choose 5 cards
+# hand = deck[0, 5]
+# #display them on screen
+# puts "Poker Hand: #{hand}"
+
+# puts "Poker Hand:"
+# hand.each do |card|
+#   puts card
+# end
+
 # Use loops to build the deck
 # for rank in ranks do
 #   for suit in suits do
