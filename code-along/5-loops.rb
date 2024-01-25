@@ -17,7 +17,7 @@ end
 
 # #start loop
 # loop do 
-#     #break loop if number of elements is the same as the idex
+#     #break loop if number of elements is the same as the index
 #     if tacos.length == index
 #         break
 #     end
