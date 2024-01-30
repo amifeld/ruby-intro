@@ -90,7 +90,11 @@ end
 #   puts card
 # end
 
-
+for rank in ranks
+    for suit in suits
+        puts "#{rank} of #{suit}"
+    end
+end
 
 # CHALLENGE
 # Deal a poker hand. Shuffle the deck and "deal" (i.e. display) a 5 card hand (i.e. 5 cards from the deck).
